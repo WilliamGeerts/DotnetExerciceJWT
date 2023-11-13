@@ -22,11 +22,11 @@ builder.Services
     {
         options.Cookie.Name = "CookieJWT";
         options.LoginPath = "/api/v1/User/auth";
-        
-        options.Cookie.SecurePolicy = CookieSecurePolicy.Always;    //Option Secure
-        options.Cookie.HttpOnly = true;                             //Option HttpOnly
-        options.Cookie.SameSite = SameSiteMode.None;                //Option SameSite
-        
+
+        options.Cookie.SecurePolicy = CookieSecurePolicy.Always; //Option Secure
+        options.Cookie.HttpOnly = true; //Option HttpOnly
+        options.Cookie.SameSite = SameSiteMode.None; //Option SameSite
+
         options.ExpireTimeSpan = TimeSpan.FromHours(24);
         options.SlidingExpiration = true;
     });
